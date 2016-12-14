@@ -1,0 +1,11 @@
+.title{
+    color: cornflowerblue;
+    font: center;
+}
+.image {
+    position: relative; width: 100px; height: 100px; float: left; margin-left: 10px;
+    display: inline-block;
+}
+.container{
+    margin-bottom: 30px;
+}
