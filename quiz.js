@@ -88,7 +88,7 @@ function q4() {
 
 function q5() {
 
-    var birthday = document.getElementsByName('bdaymonth');
+    var birthday = document.getElementsByName('favmonth');
     for (var j = 0; j < birthday.length; j++) {
         var numbvalue = birthday[j];
         if (numbvalue.value == "2016-01" || numbvalue.value == "2016-02" || numbvalue.value == "2016-03") {
