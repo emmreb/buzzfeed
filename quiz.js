@@ -109,16 +109,16 @@ var score = 0;
 
     function getResults() {
         if (score <= 26 && score > 19) {
-            document.getElementById("result1").innerHTML = "You are a dulche de leche doughnut";
+            document.getElementById("result").innerHTML = "You are a dulche de leche doughnut";
         }
         else if (score <= 19 && score > 12) {
-            document.getElementById("result2").innerHTML = "You are chcocolate glazed with rainbow sprinkles doughnut";
+            document.getElementById("result").innerHTML = "You are chcocolate glazed with rainbow sprinkles doughnut";
         }
         else if (score <= 12 && score > 7) {
-            document.getElementById("result3").innerHTML = "You are a jelly doughnut";
+            document.getElementById("result").innerHTML = "You are a jelly doughnut";
         }
         else if (score <= 7) {
-            document.getElementById("result4").innerHTML = "You are a plain glazed doughnut";
+            document.getElementById("result").innerHTML = "You are a plain glazed doughnut";
 
         }
     }
