@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="quiz.css">
+    <script src="quiz.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <meta charset="UTF-8">
     <title>Quiz</title>
@@ -11,64 +13,66 @@
 <h1 class="title text-center">Which kind of doughnut are you?</h1>
 <div class = "container">
     <p>1. Which is your favorite mode of transportation?</p>
-    <div class="row">
+    <div class="row question1">
         <div class="col-sm-3">
-            <input type ="radio" name="myRadio" id="jelly" />
+            <input type ="radio" name="myAnswer" value="jelly"  />
             <img class = "image" src =https://d21xlh2maitm24.cloudfront.net/nyc/Transparent-Bike.png?mtime=20160420134420>
         </div>
         <div class="col-sm-3">
-            <input type ="radio" name="myRadio" id="chocolateGlazeRainbow" />
+            <input type ="radio" name="myAnswer" value="chocolateGlazeRainbow" />
             <img class ="image" src =http://assets.nydailynews.com/polopoly_fs/1.1886269.1406763117!/img/httpImage/image.jpg_gen/derivatives/article_750/suburban-subway.jpg>
         </div>
         <div class="col-sm-3">
-            <input type ="radio" name="myRadio" id="dulchedeleche" />
+            <input type ="radio" name="myAnswer" value="dulchedeleche"  />
             <img class= "image" src =http://cdn.c.photoshelter.com/img-get/I0000Axgb1PKAPd0/s/880/880/DavidMarxPhoto-104192-Empty-Chairlift-at-Whitefish-Mountain-Resort.jpg>
         </div>
         <div class="col-sm-3">
-            <input type ="radio" name="myRadio" id="glazed" />
+            <input type ="radio" name="myAnswer" value="glazed" />
             <img class= "image" src =http://www.zerohedge.com/sites/default/files/images/user230519/imageroot/NYC%20Taxi.jpg>
         </div>
     </div>
+    <button class="submit" onclick="return q1();" type="submit">Submit</button>
 </div>
 <div class = "container">
-    <p>2. Pick a movie:</p>
+    <p>2. Check all movies you like:</p>
     <div class="row">
         <div class="col-sm-3">
-            <input type ="checkbox" name="myCheck" id="jelly" />
+            <input type ="checkbox" name="myCheck" value="jelly"  />
             <img class = "image" src =https://images-na.ssl-images-amazon.com/images/M/MV5BMjA4NDg3NzYxMF5BMl5BanBnXkFtZTcwNTgyNzkyNw@@._V1_UY1200_CR90,0,630,1200_AL_.jpg>
         </div>
         <div class="col-sm-3">
-            <input type ="checkbox" name="myCheck" id="chocolateGlazeRainbow" />
+            <input type ="checkbox" name="myCheck" value="chocolateGlazeRainbow"  />
             <img class ="image" src =https://images-na.ssl-images-amazon.com/images/M/MV5BNTM3OTc0MzM2OV5BMl5BanBnXkFtZTYwNzUwMTI3._V1_UX182_CR0,0,182,268_AL_.jpg>
         </div>
         <div class="col-sm-3">
-            <input type ="checkbox" name="myCheck" id="dulchedeleche" />
+            <input type ="checkbox" name="myCheck" value="dulchedeleche" />
             <img class= "image" src =https://images-na.ssl-images-amazon.com/images/M/MV5BNjY1NjQ3NDY5MF5BMl5BanBnXkFtZTYwODAyMTc3._V1_UY1200_CR69,0,630,1200_AL_.jpg>
         </div>
         <div class="col-sm-3">
-            <input type ="checkbox" name="myRadio" id="glazed" />
+            <input type ="checkbox" name="myRadio" value="glazed" />
             <img class= "image" src =https://images-na.ssl-images-amazon.com/images/M/MV5BMjE0MzkwMDczNV5BMl5BanBnXkFtZTcwNzU1ODYxMQ@@._V1_UX182_CR0,0,182,268_AL_.jpg>
         </div>
     </div>
+    <button class="submit" onclick="return q2();" type="submit">Submit</button>
 </div>
 <div class = "container">
-<form action="action_page.php">
-    3. Select your favorite color:</br>
-    <input type="color" name="favcolor" value="#ff0000">
-    <input type="submit">
-    </form>
+    3. Select your favorite color: (choose between red, yellow, green, or purple)</br>
+    <input type="text" name="favcolor" placeholder="your color here">
+    <button class="submit" onclick=" return q3();" type="submit">Submit</button>
 </div>
 <div class = "container">
-    4. How excited are you about Chanukah? enter a number between one and ten.</br>
+    4. How excited are you about Chanukah? (enter a number between one and ten) </br>
     <input type="number" name="quantity" min="1" max="10">
+    <button class="submit" onclick=" return q4();" type="submit">Submit</button>
 </div>
 <div class = "container">
-    5. Which month were you born in?
+    5. Which month were you born in? (Choose it in year 2016)
     <input type="month" name="bdaymonth">
+    <button class="submit" onclick=" return q5();" type="submit">Submit</button>
 </div>
 <div class ="container">
     Click to get your results!!
-    <input type="submit">
+    <input type="submit" onclick="return getResults()">
 </div>
 </body>
 </html>
