@@ -1,14 +1,29 @@
 body{
     background-image: url(http://foodnetwork.sndimg.com/content/dam/images/food/fullset/2013/7/29/0/BX0903H_cinnamon-baked-doughnuts-recipe_s4x3.jpg) ;
 }
+.container{
+    margin-bottom: 30px;
+    font-size: 20px;
+    color: midnightblue;
+    font-family: Tahoma;
+    border-style: solid;
+    border-color: lightpink;
+    border-width: thick;
+}
 .title{
     color: cornflowerblue;
     font: center;
+    font-size: 37px;
+    font-family: Tahoma;
+    border-width: thin;
+    border-color: midnightblue;
+    border-style: solid;
 }
 .image {
     position: relative; width: 100px; height: 100px; float: left; margin-left: 10px;
     display: inline-block;
-}
-.container{
-    margin-bottom: 30px;
+    border-style: solid;
+    border-color: lightslategrey;
+    border-width: thick;
+
 }

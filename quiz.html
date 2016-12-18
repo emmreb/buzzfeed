@@ -31,7 +31,7 @@
             <img class= "image" src =http://www.zerohedge.com/sites/default/files/images/user230519/imageroot/NYC%20Taxi.jpg>
         </div>
     </div>
-    <button class="submit" onclick="return q1();" type="submit">Submit</button>
+
 </div>
 <div class = "container">
     <p>2. Check all movies you like:</p>
@@ -53,26 +53,30 @@
             <img class= "image" src =https://images-na.ssl-images-amazon.com/images/M/MV5BMjE0MzkwMDczNV5BMl5BanBnXkFtZTcwNzU1ODYxMQ@@._V1_UX182_CR0,0,182,268_AL_.jpg>
         </div>
     </div>
-    <button class="submit" onclick="return q2();" type="submit">Submit</button>
+
 </div>
 <div class = "container">
     3. Select your favorite color: (choose between red, yellow, green, or purple)</br>
     <input type="text" name="favcolor" placeholder="your color here">
-    <button class="submit" onclick=" return q3();" type="submit">Submit</button>
+
 </div>
 <div class = "container">
     4. How excited are you about Chanukah? (enter a number between one and ten) </br>
     <input type="number" name="quantity" min="1" max="10">
-    <button class="submit" onclick=" return q4();" type="submit">Submit</button>
+
 </div>
 <div class = "container">
     5. What was your favorite month this year ?(in 2016)
     <input type="month" name="favmonth">
-    <button class="submit" onclick=" return q5();" type="submit">Submit</button>
+
 </div>
 <div class ="container">
     Click to get your results!!
-    <input type="submit" onclick="return getResults()">
+    <input type="submit" onclick="return quiz()">
+    <p id="result1"></p>
+    <p id="result2"></p>
+    <p id="result3"></p>
+    <p id="result4"></p>
 </div>
 </body>
 </html>
