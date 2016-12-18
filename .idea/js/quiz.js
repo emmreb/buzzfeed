@@ -4,25 +4,24 @@ var score = 0;
 
     function q1() {
 
-            var radios = document.getElementsByName('myAnswer');
-            for (var j = 0; j < radios.length; j++) {
-                var radio = radios[j];
-                if (radio.value == "jelly" && radio.checked) {
-                    score = score + 1;
-                }
-                if (radio.value == "glazed" && radio.checked) {
-                    score = score + 2;
-                }
-                if (radio.value == "chocolateGlazeRainbow" && radio.checked) {
-                    score = score + 3;
-                }
-                 if (radio.value == "dulchedeleche" && radio.checked) {
-                    score = score + 4;
-                }
+        var radios = document.getElementsByName('myAnswer');
+        for (var j = 0; j < radios.length; j++) {
+            var radio = radios[j];
+            if (radio.value == "jelly" && radio.checked) {
+                score = score + 1;
             }
-            console.log(score);
+            if (radio.value == "glazed" && radio.checked) {
+                score = score + 2;
+            }
+            if (radio.value == "chocolateGlazeRainbow" && radio.checked) {
+                score = score + 3;
+            }
+            if (radio.value == "dulchedeleche" && radio.checked) {
+                score = score + 4;
+            }
         }
-
+        console.log(score);
+    }
 
 function q2() {
 
