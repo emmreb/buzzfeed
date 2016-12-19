@@ -112,7 +112,7 @@ var score = 0;
             document.getElementById("result").innerHTML = "You are a dulche de leche doughnut";
         }
         else if (score <= 19 && score > 12) {
-            document.getElementById("result").innerHTML = "You are chcocolate glazed with rainbow sprinkles doughnut";
+            document.getElementById("result").innerHTML = "You are chocolate glazed with rainbow sprinkles doughnut";
         }
         else if (score <= 12 && score > 7) {
             document.getElementById("result").innerHTML = "You are a jelly doughnut";
